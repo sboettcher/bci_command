@@ -20,6 +20,8 @@ int main(int argc, char **argv)
     std_msgs::String msg;
     string output;
 
+    // At this point the output string is to be filled with either "Left", "Right", or "Confirm".
+    // Below this is done by a simple command prompt.
     // Rescan and Quit are temporary for debug, they don't necessarily have to be implemented with BCI.
     cout << "Enter command (Left, Right, Confirm, Rescan, Quit): ";
     getline(cin, output);
